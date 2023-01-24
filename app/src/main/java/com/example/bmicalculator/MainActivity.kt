@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
             else {
                 val bmiValue = weight.text.toString().toFloat() / ((height.text.toString().toFloat() / 100) * (height.text.toString().toFloat() / 100))
-                val bmiTwoDigits = bmiValue.toString().format("%.2f", bmiValue).toFloat()
+                val bmiTwoDigits = String.format("%.2f", bmiValue).toFloat()
 
                 displayBMI.text = bmiTwoDigits.toString()
 
